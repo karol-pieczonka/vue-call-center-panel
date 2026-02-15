@@ -2,6 +2,8 @@
 
 Web application for managing customer support tickets in a call center.
 
+**🚀 Live demo:**: [https://vue-call-center-panel.vercel.app/](https://vue-call-center-panel.vercel.app/)
+
 ## Tech Stack
 
 - Vue 3 (Composition API)
