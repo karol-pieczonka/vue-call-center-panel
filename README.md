@@ -43,6 +43,7 @@ src/
 │   └── tickets/         # Ticket-related components
 ├── mocks/               # Mock data
 ├── views/               # Page views
+├── composables/         # Reusable composition functions
 ├── stores/              # Pinia stores
 ├── services/            # API layer
 ├── utils/               # Helper functions
