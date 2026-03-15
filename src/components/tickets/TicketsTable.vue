@@ -1,16 +1,12 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
-import { useRouter } from 'vue-router'
 import { useTicketsStore } from '@/stores/useTicketsStore'
+import { useTicketNavigation } from '@/composables/useTicketNavigation'
 import StatusBadge from '@/components/tickets/StatusBadge.vue'
 import PriorityBadge from '@/components/tickets/PriorityBadge.vue'
 
-const router = useRouter()
 const { filteredTickets } = storeToRefs(useTicketsStore())
-
-function goToTicket(id: number) {
-  router.push({ name: 'ticket-details', params: { id } })
-}
+const { goToTicket } = useTicketNavigation()
 </script>
 
 <template>
